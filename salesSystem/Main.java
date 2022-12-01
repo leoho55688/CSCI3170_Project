@@ -15,7 +15,7 @@ public class Main {
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection(dbAddress, dbUsername, dbPassword);
             Statement stmt = conn.createStatement();
-            stmt.executeUpdate("use group41;");
+            stmt.executeUpdate("use db41;");
             System.out.println("Welcome to sales system!");
             menu(conn);
             conn.close();
@@ -58,14 +58,14 @@ public class Main {
                     SystemAdministrator admin = new SystemAdministrator(conn);
                     admin_menu(scan, admin);
                     break;
-                case 2:
-                    Salesperson salesperson = new Salesperson();
-                    salesperson_menu(scan, salesperson, conn);
-                    break;
-                case 3:
-                    Manager manager = new Manager(conn);
-                    manager_menu(manager, conn);
-                    break;
+                // case 2:
+                //     Salesperson salesperson = new Salesperson();
+                //     salesperson_menu(scan, salesperson, conn);
+                //     break;
+                // case 3:
+                //     Manager manager = new Manager(conn);
+                //     manager_menu(manager, conn);
+                //     break;
                 default:
 
             }
@@ -81,7 +81,7 @@ public class Main {
             System.out.println("what kinds of operation would you like to perform?");
             System.out.println("1. Create all tables");
             System.out.println("2. Delete all tables");
-            System.out.println("3. load from datafile");
+            System.out.println("3. Load from datafile");
             System.out.println("4. Show content of a table");
             System.out.println("5. Return to the main menu");
 
@@ -108,12 +108,13 @@ public class Main {
                     admin.loadData();
                     break;
                 case 4:
-                    admin.checkData();
+                    admin.showData();
                     break;
                 default:
             }
         }
     }
+
     public static void salesperson_menu (Scanner scan, Salesperson salesperson) {
 
     }
