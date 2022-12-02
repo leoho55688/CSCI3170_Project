@@ -1,7 +1,7 @@
 # CSCI3170_Project
 
 Group number: 41
-Group member: Ho Ka Hei (1155159369), Tse Wing Sze (1155157413), Chan Tan Fung (1155158914)
+Group members: Ho Ka Hei (1155159369), Tse Wing Sze (1155157413), Chan Tan Fung (1155158914)
 
 Four major files
 1. Main.java - a menu that directs to different classes
@@ -10,3 +10,4 @@ Four major files
 4. Manager.java - tasks related to overseeing the whole sales system, e.g. sorting salespeople according to experience or number of transactions, tallying total sales value and showing the N most popular parts
 
 Methods of compilation and execution 
+The system is mainly developed using Java and Java JDBC API, while the data is stored in MySQL database system.
