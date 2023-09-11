@@ -1,0 +1,2 @@
+javac salesSystem/*.java
+java -cp .:mysql-jdbc.jar salesSystem.Main

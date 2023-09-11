@@ -1,7 +1,7 @@
 # CSCI3170_Project
 
 Group number: 41
-Group members: Ho Ka Hei (1155159369), Tse Wing Sze (1155157413), Chan Tan Fung (1155158914)
+Group members: Ho Ka Hei, Tse Wing Sze, Chan Tan Fung
 
 Four major files
 1. Main.java - a menu that directs to different classes
